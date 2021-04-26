@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { AppRoutingModule } from './app-routing.module'
 
@@ -15,6 +14,7 @@ import { MemberListComponent } from './components/members/member-list/member-lis
 import { MemberDetailComponent } from './components/members/member-detail/member-detail.component';
 import { ListsComponent } from './components/lists/lists.component';
 import { MessagesComponent } from './components/messages/messages.component'
+import { SharedModule } from './modules/shared.module'
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { MessagesComponent } from './components/messages/messages.component'
     NgbModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
